@@ -10,8 +10,8 @@ const Counter = () => {
   return (
     <div className='Counter-container'>
       <h2>Counter: {counter}</h2>
-      <Button onClick={() => alert("click")} text="+1" />
-      <Button onClick={() => alert("click")} text="-1" />
+      <Button onClick={() => setCounter(counter + 1)} text="+1" />
+      <Button onClick={() => setCounter(counter - 1)} text="-1" />
     </div>
   )
 }
